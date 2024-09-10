@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(405deg, #17153B, #17153B);
+    padding: 10px;
+    
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app h2{
+    margin-top: 20px;
+    color: #002765;
+    align-items: center;
+    display: flex;
+   
+}
+.todo-app img{
+    width: 30px;
+    margin-left: 10px;
+    
+}
+.row{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    border-radius: 30px;
+    background: #ededed;
+    justify-content: space-between;
+}
+input{
+   
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 14px;
+   
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px ;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28PX;  
+    border-radius: 50%;
+    background-image:url(image/unchecked.png);
+    background-size: cover;
+    background-position:center;
+    top: 8px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(image/orange-check-mark-verified-circle-16225.png);
+}
+
+ul li span{
+     position: absolute;
+     right: 0;
+     top: 5px;
+     width: 40px;
+     height: 40px;
+     text-align: center;
+     color: #555;
+     font-size: 22px;
+     line-height: 40px;
+     border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
+}
